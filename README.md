@@ -27,7 +27,8 @@ On first time use, the tool will ask you for three pieces of information:
 <sub>1. Spotify API information can be obtained at <a href="https://developer.spotify.com/dashboard/">Spotify API Dashboard</a>. 
 Log in with your Spotify account and request free API access. You can then create a free application within the 
 Dashboard tab and acquire Client ID and Client Secret. Please use separate API accounts for each user because Spotify 
-imposes rate limits on these free accounts.</sub><br>
+imposes rate limits on these free accounts. <strong>*IMPORTANT* After creating your Spotify API application, click into 
+the application from your dashboard and click on EDIT SETTINGS. Under Redirect URLs, add http://localhost:8080.</strong></sub><br>
 <sub>2. Spotify Username can be obtained at <a href="https://www.spotify.com/us/account/overview/">Spotify Account Overview</a>.</sub><br><br>
 Once these information are correctly entered, you will be redirected to the Spotify website to log into Spotify.
 
