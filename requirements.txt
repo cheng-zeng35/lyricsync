@@ -1,0 +1,6 @@
+future~=0.18.2
+tkfontchooser~=2.0.2
+requests~=2.25.1
+beautifulsoup4~=4.9.3
+spotipy~=2.17.1
+hanziconv~=0.3.2
