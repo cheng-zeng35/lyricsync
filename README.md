@@ -87,9 +87,9 @@ Any suggestion on functionality and/or code improvement is welcomed!
 
 ## Screenshots
 With background, Title Bar, and function buttons:
-![screenshot1](https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot1.png =800x)<br><br>
+<img src="https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot1.png" width="800"><br><br>
 Fully transparent:
-![screenshot1](https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot2.png =800x)
+<img src="https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot2.png" width="800">
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
