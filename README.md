@@ -8,8 +8,8 @@ Lyrics are obtained from [kugeci.com](kugeci.com).
 ## Installation and Setup
 
 ### Direct Download (Method 1)
-Download <strong>Spotify Lyric.zip</strong>, unzip to a folder at your discretion, and run the 
-<strong>main.exe</strong> file within the folder.  
+Download <strong>Spotify Lyric.zip</strong> from the latest release at <a href="https://github.com/cheng-zeng35/lyricsync/releases">Releases</a>, 
+unzip to a folder at your discretion, and run the <strong>main.exe</strong> file within the folder.  
 
 ### Direct Download (Method 2)
 Download the source file and navigate to <strong>dist/main</strong>. Find the <strong>main.exe</strong> file and run.
@@ -24,11 +24,11 @@ On first time use, the tool will ask you for three pieces of information:
 <li>Spotify API Client Secret<sup>1</sup></li>
 <li>Spotify Username<sup>2</sup></li>
 </ul>
-<sub>1. Spotify API information can be obtained at developer.spotify.com/dashboard. 
+<sub>1. Spotify API information can be obtained at <a href="https://developer.spotify.com/dashboard/">Spotify API Dashboard</a>. 
 Log in with your Spotify account and request free API access. You can then create a free application within the 
 Dashboard tab and acquire Client ID and Client Secret. Please use separate API accounts for each user because Spotify 
 imposes rate limits on these free accounts.</sub><br>
-<sub>2. Spotify Username can be obtained at spotify.com/us/account/overview.</sub><br><br>
+<sub>2. Spotify Username can be obtained at <a href="https://www.spotify.com/us/account/overview/">Spotify Account Overview</a>.</sub><br><br>
 Once these information are correctly entered, you will be redirected to the Spotify website to log into Spotify.
 
 ## Usage
