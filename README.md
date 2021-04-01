@@ -24,11 +24,11 @@ On first time use, the tool will ask you for three pieces of information:
 <li>Spotify API Client Secret<sup>1</sup></li>
 <li>Spotify Username<sup>2</sup></li>
 </ul>
-<sub>1. Spotify API information can be obtained at www.developer.spotify.com/dashboard. 
+<sub>1. Spotify API information can be obtained at developer.spotify.com/dashboard. 
 Log in with your Spotify account and request free API access. You can then create a free application within the 
 Dashboard tab and acquire Client ID and Client Secret. Please use separate API accounts for each user because Spotify 
 imposes rate limits on these free accounts.</sub><br>
-<sub>2. Spotify Username can be obtained at www.spotify.com/us/account/overview.</sub><br><br>
+<sub>2. Spotify Username can be obtained at spotify.com/us/account/overview.</sub><br><br>
 Once these information are correctly entered, you will be redirected to the Spotify website to log into Spotify.
 
 ## Usage
@@ -87,9 +87,9 @@ Any suggestion on functionality and/or code improvement is welcomed!
 
 ## Screenshots
 With background, Title Bar, and function buttons:
-![screenshot1](https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot1.png)<br><br>
+![screenshot1](https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot1.png =800x)<br><br>
 Fully transparent:
-![screenshot1](https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot2.png)
+![screenshot1](https://github.com/cheng-zeng35/lyricsync/blob/608c5a09a6f411e4987b1ed681b9a8312a154c18/static/screenshot2.png =800x)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
