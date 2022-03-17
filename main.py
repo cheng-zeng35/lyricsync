@@ -15,6 +15,9 @@ import classes
 import lrc_mgmt
 
 sp = False # initialize Spotify token for initial check in check_credentials
+# initialize additional variables to avoid repetitive querying
+song = False
+cache_file = False
 
 window = tk.Tk() # initialize tk window
 
@@ -27,23 +30,25 @@ sp = credential.check_credentials(credential_file, '', sp, window)  # access tok
 window.overrideredirect(True)  # turn off default window
 
 # first check on launch
-song = spotify_func.check_spotify(sp)  # Spotify play information
-search_result = get_lyric.get_search_result(song)  # lyric search result
-lyric, offset = get_lyric.get_lyric(search_result, 0, song)  # use first lyric on search result as default
-lyric_f = lrc.format_lyric(lyric)  # format lyric, separately store for efficiency purposes
+if not song:
+    song = spotify_func.check_spotify(sp)  # Spotify play information
+    search_result = get_lyric.get_search_result(song)  # lyric search result
+    lyric, offset = get_lyric.get_lyric(search_result, 0, song)  # use first lyric on search result as default
+    lyric_f = lrc.format_lyric(lyric)  # format lyric, separately store for efficiency purposes
 
-# read user cache
-cache_file = 'cache/user_setting.txt'
-# start with default
-cache = ['Microsoft YaHei\n', '32\n', 'normal\n', 'roman\n', '0\n', '0\n',
-         'blue\n', 'black\n', '2\n', '55\n', '0.8\n', '[1, "white", "gray1"]\n', '1\n', '1\n', '0\n', '0\n']
-try:
-    with open(cache_file, 'r') as f:
-        temp = f.readlines()
-    if len(temp) == 16:
-        cache = temp
-except FileNotFoundError:
-    pass
+# read user cache on launch
+if not cache_file:
+    cache_file = 'cache/user_setting.txt'
+    # start with default
+    cache = ['Microsoft YaHei\n', '32\n', 'normal\n', 'roman\n', '0\n', '0\n',
+             'blue\n', 'black\n', '2\n', '55\n', '0.8\n', '[1, "white", "gray1"]\n', '1\n', '1\n', '0\n', '0\n']
+    try:
+        with open(cache_file, 'r') as f:
+            temp = f.readlines()
+        if len(temp) == 16:
+            cache = temp
+    except FileNotFoundError:
+        pass
 
 # set up window
 font = font.Font(family=cache[0][:-1], size=int(cache[1][:-1]), weight=cache[2][:-1], slant=cache[3][:-1],
