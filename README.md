@@ -77,7 +77,6 @@ The Title Bar and function buttons will appear/disappear based on mouse hover.
 
 ## Planning Improvements
 <ul>
-<li>Add support for genius.com</li>
 <li>Add song controls for Spotify Premium Users (Spotify API does not seem to support song controls for free users.)</li>
 </ul>
 

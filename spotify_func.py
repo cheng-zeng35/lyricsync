@@ -18,7 +18,7 @@ def check_spotify(sp):
                 'name': HanziConv.toSimplified(current_track['item']['name']),
                 'playing': current_track['is_playing']}
     # TypeError when no music is being played on Spotify
-    except TypeError or spotipy.exceptions.SpotifyException or requests.exceptions.ReadTimeout:
+    except TypeError or OSError or spotipy.exceptions.SpotifyException or requests.exceptions.ReadTimeout:
         return {'progress_ms': 0,
                 'artist': 'N/A',
                 'length': 0,

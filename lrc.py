@@ -2,12 +2,16 @@
 
 # convert lrc timestamp (min:sec.hsec) into ms
 def convert_to_ms(time_stamp):
-    time_stamp = time_stamp.split(':')
-    minute = int(time_stamp[0])
-    time_stamp = time_stamp[1].split('.')
-    second = int(time_stamp[0])
-    hsecond = int(time_stamp[1][:2])
-    return minute * 60 * 1000 + second * 1000 + hsecond * 10
+    try:
+        time_stamp = time_stamp.split(':')
+        minute = int(time_stamp[0])
+        time_stamp = time_stamp[1].split('.')
+        second = int(time_stamp[0])
+        hsecond = int(time_stamp[1][:2])
+        return minute * 60 * 1000 + second * 1000 + hsecond * 10
+    # if parsing failed, push sentence to beginning by setting it at 0ms (e.g. ignore this sentence)
+    except ValueError:
+        return 0
 
 
 # split aggregate lrc string into a list of sentences [[timestamp, lyric]...]

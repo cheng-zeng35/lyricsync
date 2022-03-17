@@ -14,13 +14,15 @@ import credential
 import classes
 import lrc_mgmt
 
+sp = False # initialize Spotify token for initial check in check_credentials
+
 window = tk.Tk() # initialize tk window
 
 window.wm_attributes('-transparentcolor', 'gray1')  # set transparent color, use gray1 to minimize antialiasing issue
 
 # set up Spotify API environment variables
 credential_file = 'cache/credentials.txt'
-sp = credential.check_credentials(credential_file, '', window)  # access token
+sp = credential.check_credentials(credential_file, '', sp, window)  # access token
 
 window.overrideredirect(True)  # turn off default window
 
